@@ -53,7 +53,6 @@ document.getElementById("image").addEventListener("change", function (e) {
           text += `${rgbInt}\n`;
         }
       }
-      alert("変換完了！ダウンロードボタンを押してください");
     };
   };
 
