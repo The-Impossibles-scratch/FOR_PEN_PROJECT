@@ -6,7 +6,8 @@ This is made by [@The_Impossibles (Scratch link)](https://scratch.mit.edu/users/
 
 ## What is this?
 This program allows you to display images with only 100% pen in SCRATCH!  
-You can use this!
+You can use this!  
+Project File : [TEMPLATE](https://github.com/The-Impossibles-scratch/FOR_PEN_PROJECT/blob/main/sb3/TEMPLATE.sb3)
 
 ## Need Credit?
 If you have downloaded or remixed a project, there is a Credit inside the project. So unless you delete it, you do not need a Credit in the Credit field.
