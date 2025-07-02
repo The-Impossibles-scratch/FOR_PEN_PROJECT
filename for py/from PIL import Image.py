@@ -4,14 +4,14 @@ import os
 def rgb_to_int(r, g, b):
     return (r << 16) + (g << 8) + b
 
-# ====== 設定 ======
+# ====== Settings ======
 MAX_WIDTH = 480
 MAX_HEIGHT = 360
 UPSCALE_SMALLER_IMAGE = True
 # ===================
 
 download_path = os.path.join(os.path.expanduser("~"), "Downloads")
-image_path = os.path.join(download_path, "b.jpg")
+image_path = os.path.join(download_path, "IMG PATH HERE")
 output_path = os.path.join(download_path, "output.txt")
 
 img = Image.open(image_path).convert('RGB')
@@ -37,4 +37,4 @@ with open(output_path, 'w') as f:
             color_int = rgb_to_int(r, g, b)
             f.write(f"{color_int}\n")
 
-print(f"記録完了：{output_path}")
+print(f"Succsessfull：{output_path}")
