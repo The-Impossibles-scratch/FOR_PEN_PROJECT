@@ -61,7 +61,7 @@ document.getElementById("image").addEventListener("change", function (e) {
 
 function download() {
   if (!text) {
-    alert("画像を先に選択してください");
+    alert("Select file first");
     return;
   }
   let blob = new Blob([text], { type: "text/plain" });
