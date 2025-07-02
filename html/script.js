@@ -14,7 +14,7 @@ document.getElementById("image").addEventListener("change", function (e) {
       const Max_W = 480;
       const Max_H = 360;
 
-      let size_change = document.getElementById("size").value;
+      let size_change = document.getElementById("size").value;  // "true" または "false"
 
       let width = img.width;
       let height = img.height;
@@ -25,7 +25,7 @@ document.getElementById("image").addEventListener("change", function (e) {
 
       if (width > Max_W || height > Max_H) {
         scale = Math.min(scaleX, scaleY);
-      } else if (size_change === "True") {
+      } else if (size_change === "true") {
         scale = Math.min(scaleX, scaleY);
       } else {
         scale = 1;
@@ -53,6 +53,7 @@ document.getElementById("image").addEventListener("change", function (e) {
           text += `${rgbInt}\n`;
         }
       }
+      alert("変換完了！ダウンロードボタンを押してください");
     };
   };
 
@@ -61,12 +62,12 @@ document.getElementById("image").addEventListener("change", function (e) {
 
 function download() {
   if (!text) {
-    alert('Select file first');
-    return
+    alert("画像を先に選択してください");
+    return;
   }
   let blob = new Blob([text], { type: "text/plain" });
   let link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
   link.download = "output.txt";
   link.click();
-};
+}
