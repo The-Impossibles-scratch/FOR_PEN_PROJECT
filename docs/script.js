@@ -50,9 +50,14 @@ document.getElementById("image").addEventListener("change", function (e) {
           let g = imageData[index + 1];
           let b = imageData[index + 2];
           let rgbInt = (r << 16) + (g << 8) + b;
-          text += `${rgbInt}\n`;
-        }
-      }
+          
+          if (y === height - 1 && x === width - 1) {
+            text += `${rgbInt}`; 
+          } else {
+            text += `${rgbInt}\n`
+          };
+        };
+      };
     };
   };
 
